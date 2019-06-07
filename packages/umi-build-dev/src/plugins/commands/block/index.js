@@ -276,6 +276,8 @@ export default api => {
                 cwd: dirname(projectPkgPath),
               },
             );
+            log('[Sylvanas] Prepare js environment...');
+   
           } catch (e) {
             spinner.fail();
             throw new Error(e);
